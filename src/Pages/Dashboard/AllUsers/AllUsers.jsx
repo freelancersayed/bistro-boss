@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { MdOutlineDelete } from "react-icons/md";
-import { FaUser, FaUsers } from "react-icons/fa6";
+import { FaUsers } from "react-icons/fa6";
 import Swal from "sweetalert2";
 
 const AllUsers = () => {
@@ -15,6 +15,7 @@ const AllUsers = () => {
       return res.data;
     },
   });
+
 
   const handleMakeAdmin= (user) => {
     axiosSecure.patch(`/users/admin/${user._id}`)

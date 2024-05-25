@@ -24,6 +24,7 @@ const SocailLogin = () => {
                 console.log(res.data);
                 navigate('/')
             })
+            navigate('/')
         })
     }
 
