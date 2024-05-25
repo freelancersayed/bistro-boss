@@ -1,0 +1,5 @@
+.featured-item{
+    background-image: url('../../../assets/home/featured.jpg');
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+}
